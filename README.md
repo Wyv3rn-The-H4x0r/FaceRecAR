@@ -1,5 +1,5 @@
 # FaceRecAR
-A Face Recognition with opencv and matplotlib with a fake "vr" for VR-Cardriges
+A Face Recognition with opencv and matplotlib with a fake "vr" for VR-Cardboards
 
 
 Uses Webcam for getting Room
