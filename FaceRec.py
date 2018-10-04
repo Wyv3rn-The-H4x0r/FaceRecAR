@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def grab_frame(cap):
     ret,frame = cap.read()
-    return cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+    return cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
 
 #Initiate the camera
 cap1 = cv2.VideoCapture(0)
@@ -12,6 +12,9 @@ cap1 = cv2.VideoCapture(0)
 #create two subplots
 ax1 = plt.subplot(1,2,1)
 ax2 = plt.subplot(1,2,2)
+# Turn off the Scalas from Plots
+ax1.axis('off')
+ax2.axis('off')
 
 #create two image plots
 im1 = ax1.imshow(grab_frame(cap1))
